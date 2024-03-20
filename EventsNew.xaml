@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="seeri.ProductNew"
+             x:Class="seeri.EventsNew"
              xmlns:vm="clr-namespace:seeri.ViewModels"
              xmlns:models="clr-namespace:seeri.Models"
-             x:DataType="vm:ProductsViewModel"
+             x:DataType="vm:EventsViewModel"
              Title="Events">
 
     <ContentPage.ToolbarItems>
@@ -83,7 +83,7 @@
                 <Button  
          Text="Update Product"
        
-         Command="{Binding SaveProductCommand}"
+         Command="{Binding SaveEventCommand}"
          >
  
                     <Button.Triggers>
@@ -128,7 +128,7 @@
                                     HeightRequest="25"
                                     FontSize="12"
                                     CornerRadius="2"
-                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ProductsViewModel}}, Path=SetOperatingProductCommand}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:EventsViewModel}}, Path=SetOperatingEventCommand}"
                                     CommandParameter="{Binding .}"/>
 
                             <Button Grid.Row="1"
@@ -138,7 +138,7 @@
                                     HeightRequest="25"
                                     FontSize="12"
                                     CornerRadius="2"
-                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ProductsViewModel}}, Path=DeleteProductCommand}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:EventsViewModel}}, Path=DeleteEventCommand}"
                                     CommandParameter="{Binding Id}" />
                         </Grid>
                     </DataTemplate>

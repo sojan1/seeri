@@ -1,6 +1,7 @@
 ﻿using seeri.Data;
 using seeri.ViewModels;
 using Microsoft.Extensions.Logging;
+using CommunityToolkit.Maui;
 
 namespace seeri
 {
@@ -11,6 +12,7 @@ namespace seeri
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -21,9 +23,9 @@ namespace seeri
     		builder.Logging.AddDebug();
 #endif
             builder.Services.AddSingleton<DatabaseContext>();
-            builder.Services.AddSingleton<ProductsViewModel>();
+            builder.Services.AddSingleton<EventsViewModel>();
             builder.Services.AddSingleton<MainPage>();
-            builder.Services.AddSingleton<ProductNew>();
+            builder.Services.AddSingleton<EventsNew>();
             return builder.Build();
         }
     }

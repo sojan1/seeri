@@ -4,29 +4,26 @@
              x:Class="seeri.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <Image
-                Source="logo.png"
-                HeightRequest="150"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
+        <ListView BackgroundColor="AliceBlue" VerticalOptions="StartAndExpand" HorizontalOptions="Start" 
+                  x:Name="newsListView" CachingStrategy="RecycleElement" Margin="0"
+                   ItemTapped="OnItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10" Margin="0" VerticalOptions="Start">
+                            <Label Text="{Binding Title}" FontAttributes="Bold" />
+                            <Label Text="{Binding PublishDate, StringFormat='Published: {0:MM/dd/yyyy}'}" />
+                            <ContentView HeightRequest="300">
+                                <Label Text="{Binding Description}" VerticalOptions="Start" />
+                            </ContentView>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
-            <Label
-                Text="SEERI"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
 
-          
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
-        </VerticalStackLayout>
     </ScrollView>
 
 </ContentPage>

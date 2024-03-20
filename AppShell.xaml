@@ -9,18 +9,17 @@
     Title="seeri">
 
 
-    
-        <ShellContent
-        Title="" 
+    <ShellContent
+        Title="Home" 
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
     
     <ShellContent
-      Title="ProductNew"
-      ContentTemplate="{DataTemplate local:ProductNew}"
-      Route="ProductNew" />
+      Title="EventsNew"
+      ContentTemplate="{DataTemplate local:EventsNew}"
+      Route="EventsNew" />
 
-    <ShellContent
+    <!--<ShellContent
       Title="Upcoming Events"
       ContentTemplate="{DataTemplate local:MainPage}"
       Route="MainPage" />
@@ -43,6 +42,12 @@
         <ShellContent
       Title="Contact Us"
       ContentTemplate="{DataTemplate local:MainPage}"
-      Route="MainPage" />
+      Route="MainPage" />-->
+
+    <ShellContent
+      Title="VerticalListPage"
+      ContentTemplate="{DataTemplate local:VerticalListPage}"
+      Route="VerticalListPage" />
     
+
 </Shell>

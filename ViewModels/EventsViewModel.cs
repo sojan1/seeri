@@ -11,11 +11,11 @@ using System.Collections.ObjectModel;
 namespace seeri.ViewModels
 {
 
-    public partial class ProductsViewModel : ObservableObject
+    public partial class EventsViewModel : ObservableObject
     {
         private readonly DatabaseContext _context;
 
-        public ProductsViewModel(DatabaseContext context)
+        public EventsViewModel(DatabaseContext context)
         {
             _context = context;
         }
@@ -53,7 +53,7 @@ namespace seeri.ViewModels
         private void SetOperatingProduct(Product? product) => OperatingProduct = product ?? new();
 
         [RelayCommand]
-        private async Task SaveProductAsync()
+        private async Task SaveEventAsync()
         {
             if (OperatingProduct is null)
                 return;
@@ -97,7 +97,7 @@ namespace seeri.ViewModels
         }
 
         [RelayCommand]
-        private async Task DeleteProductAsync(int id)
+        private async Task DeleteEventAsync(int id)
         {
             await ExecuteAsync(async () =>
             {

@@ -2,11 +2,11 @@ using seeri.ViewModels;
 namespace seeri;
 
 
-public partial class ProductNew : ContentPage
+public partial class EventsNew : ContentPage
 {
-    private readonly ProductsViewModel _viewModel;
+    private readonly EventsViewModel _viewModel;
 
-    public ProductNew(ProductsViewModel viewModel)
+    public EventsNew(EventsViewModel viewModel)
     {
         InitializeComponent();
         BindingContext = viewModel;
