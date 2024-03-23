@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="seeri.ContactUs"
+             Title="ContactUs">
+    <VerticalStackLayout>
+        <StackLayout Padding="20" Spacing="10" HorizontalOptions="Center">
+            <Label 
+        Text="Rev. Dr. Jacob Thekeparampil"
+        FontSize="20" />
+            <Label 
+        Text="Director, SEERI, Baker Hill,"
+        FontSize="18" />
+            <Label 
+        Text="Kottayam. 686001,"
+        FontSize="18" />
+            <Label 
+        Text="Kerala, India."
+        FontSize="18" />
+
+            <Label Text="Phone:" FontSize="18" />
+            <Label 
+        Text="0091-481-2564333; 2566333, 2560856"
+        FontSize="18" />
+
+            <Label Text="E-mail:" FontSize="18" />
+            <Label 
+        Text="seeri@bsnl.in, maeri@dataone.in"
+        FontSize="18" />
+        </StackLayout>
+ 
+    </VerticalStackLayout>
+</ContentPage>

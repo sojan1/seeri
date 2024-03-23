@@ -13,11 +13,32 @@
         Title="Home" 
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-    
+
     <ShellContent
+      Title="Upcoming Events"
+      ContentTemplate="{DataTemplate local:UpcomingEvents}"
+      Route="UpcomingEvents" />
+
+    <ShellContent
+      Title="About Us"
+      ContentTemplate="{DataTemplate local:AboutUs}"
+      Route="AboutUs" />
+
+    <ShellContent
+      Title="Contact Us"
+      ContentTemplate="{DataTemplate local:ContactUs}"
+      Route="ContactUs" />
+
+    <ShellContent
+      Title="Version 1.0 (Powered by sojan.net)"
+        />
+
+</Shell>
+    
+<!--<ShellContent
       Title="EventsNew"
       ContentTemplate="{DataTemplate local:EventsNew}"
-      Route="EventsNew" />
+      Route="EventsNew" />-->
 
     <!--<ShellContent
       Title="Upcoming Events"
@@ -42,7 +63,7 @@
         <ShellContent
       Title="Contact Us"
       ContentTemplate="{DataTemplate local:MainPage}"
-      Route="MainPage" />-->
+      Route="MainPage" />
 
     <ShellContent
       Title="VerticalListPage"
@@ -50,4 +71,4 @@
       Route="VerticalListPage" />
     
 
-</Shell>
+</Shell> -->

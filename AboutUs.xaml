@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="seeri.AboutUs"
+             Title="AboutUs">
+    <VerticalStackLayout>
+        <ScrollView HeightRequest="700">
+            <StackLayout Padding="10" >
+                        <!-- Title -->
+                        <Label Text="St. Ephrem Ecumenical Research Institute (SEERI)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,20"/>
+
+                        <!-- Description -->
+                        <Label Text="An institution of the Syro Malankara Catholic Church, established in 1985 at Kottayam, Kerala, India, promotes Syriac studies. It is an ecumenical Institute unique in India. Its students and teachers come from not only the 7 Churches of Syriac tradition but also from other Churches from abroad."
+                        FontSize="Medium"
+                         Margin="20,0,0,10"
+                         LineBreakMode="WordWrap"/>
+
+                        <!-- Collaborations -->
+                        <Label Text="Collaborations:"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       Margin="0,0,0,10"/>
+                        <Label Text="- In collaboration with Mahatma Gandhi University of Kerala State, SEERI offers a Certificate Course in Syriac (3 months), M.A. (Syriac) course (Post Graduate programme of 2 years), and Ph.D. in Syriac language and literature (research programme of 3 years)."
+                       FontSize="Medium"
+                       Margin="20,0,0,10"
+                       LineBreakMode="WordWrap"/>
+                        <!-- Add more collaborations as needed -->
+
+                        <!-- International Collaborations -->
+                        <Label Text="International Collaborations:"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       Margin="0,20,0,10"/>
+                        <Label Text="- The Universitй Catholique de Louvain, Louvain-la-Neuve, Belgium"
+                       FontSize="Medium"
+                       Margin="20,0,0,5"/>
+                        <Label Text="- Institute of Eastern Christian Studies, Radboud (Catholic) University, Nijmegen, Holland"
+                       FontSize="Medium"
+                       Margin="20,0,0,5"/>
+                        <Label Text="- Oriental Institute, University of Oxford, United Kingdom"
+                       FontSize="Medium"
+                       Margin="20,0,0,5"/>
+                        <Label Text="- Institute for Semitic Studies, College de France, Paris, France"
+                       FontSize="Medium"
+                       Margin="20,0,0,5"/>
+                        <Label Text="- Institute Catholique de Paris, France"
+                       FontSize="Medium"
+                       Margin="20,0,0,5"/>
+                        <Label Text="- Universitй de St. Esprit, Kaslik, Lebanon"
+                       FontSize="Medium"
+                       Margin="20,0,0,5"/>
+                        <Label Text="- Oriental Institute, Martin Luther University, Halle, Germany"
+                       FontSize="Medium"
+                       Margin="20,0,0,5"/>
+                        <Label Text="- Georg August Universitat, Goettingen, Germany"
+                       FontSize="Medium"
+                       Margin="20,0,0,5"/>
+                        <Label Text="- Catholic University of America, Washington DC, USA"
+                       FontSize="Medium"
+                       Margin="20,0,0,5"/>
+                        <!-- Add more international collaborations as needed -->
+
+                        <!-- Syriac Conferences -->
+                        <Label Text="Syriac Conferences:"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       Margin="0,20,0,10"/>
+                        <Label Text="- SEERI hosts an International Syriac Conference every 4th year. The 1987, 1990, 1994, 1998, 2002, and 2006 conference papers are published in volumes as mentioned."
+                       FontSize="Medium"
+                       Margin="20,0,0,10"
+                       LineBreakMode="WordWrap"/>
+                        <!-- Add more conference details as needed -->
+
+                        <!-- Publications -->
+                        <Label Text="Publications:"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       Margin="0,20,0,10"/>
+                        <Label Text="- The regular publications of SEERI include 'The Harp' (English), 'Moran Etho' (Monographs), S.C.C. (SEERI Correspondence Course), AWSĀR SLAWŌT’O (Liturgical books), 'Nuhro' (Articles), and 'Madroso' (Translations)."
+                       FontSize="Medium"
+                       Margin="20,0,0,10"
+                       LineBreakMode="WordWrap"/>
+                        <!-- Add more publication details as needed -->
+
+                    </StackLayout>
+
+            </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>
